@@ -1,9 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Ramaraja&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Ramaraja", serif;
+  font-family: "League Spartan", sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 html {
@@ -64,8 +69,120 @@ button {
   hyphens: auto;
 }
 body {
+}
+.section-hero {
+  background-image: url("./images/homepage/hero-bg-desktop.jpg");
+  min-height: 82rem;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  color: white;
+  padding: 6.5rem 0 0 16.5rem;
+}
+.section-hero__textbox {
+  width: fit-content;
+}
+.section-hero__imgbox {
+  margin-bottom: 15.3rem;
+}
+.section-hero__title {
+  margin-bottom: 2.4rem;
+  font-weight: 300;
+  font-size: 6.4rem;
+  line-height: 7.2rem;
+  letter-spacing: -0.8px;
+  max-width: 52.4rem;
+}
+.section-hero__desc {
+  margin-bottom: 4.2rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: -0.225px;
+  max-width: 44.5rem;
+}
+.section-hero__cta {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 2.4rem 4.5rem 2.4rem 5.4rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 2px;
+  position: relative;
+}
+.section-hero__cta span {
+  position: relative;
+  z-index: 3;
+}
+.section-hero__cta:hover,
+.section-hero__cta:focus {
+  color: black;
+}
+.section-hero__cta::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 0;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-hero__cta:hover::before,
+.section-hero__cta:focus::before {
+  width: 100%;
+}
+
+@media all and (max-width: 904px) {
+  .section-hero {
+    background-image: url("./images/homepage/hero-bg-tablet.jpg");
+    background-attachment: initial;
+    min-height: 99.2rem;
+    padding: 37.4rem 3.9rem 0 3.9rem;
+  }
+  .section-hero__imgbox {
+    margin-bottom: 3.2rem;
+  }
+  .section-hero__textbox {
+    width: 100%;
+    max-width: 68.9rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .section-hero__title {
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.6px;
+    max-width: 68.9rem;
+  }
+  .section-hero__desc {
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
+    max-width: 57.3rem;
+  }
+}
+@media all and (max-width: 392px) {
+  .section-hero {
+    background-image: url("./images/homepage/hero-bg-mobile.jpg");
+    min-height: 74.8rem;
+    padding: 23.2rem 2.4rem 0 2.4rem;
+  }
+  .section-hero__title {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    letter-spacing: -0.4px;
+  }
+  .section-hero__desc {
+    margin-bottom: 3.2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.1875px;
+  }
 }
