@@ -315,3 +315,133 @@ body {
     display: none;
   }
 }
+
+/* highlights */
+
+.section-highlight {
+  background: #111111;
+  color: white;
+  padding: 20rem 2.4rem 12rem 2.4rem;
+}
+.section-highlight__container {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 12.5rem;
+}
+.section-highlight__textbox-title {
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+  font-size: 4rem;
+  letter-spacing: -0.5px;
+  line-height: 5.6rem;
+}
+.section-highlight__textbox-desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: -0.225px;
+  width: 100%;
+  max-width: 44.5rem;
+}
+.section-highlight__menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.section-highlight__menu-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.section-highlight__menu-item:last-child {
+  border: none;
+}
+.section-highlight__menu-item-imgbox {
+  position: relative;
+  width: 100%;
+  max-width: 16rem;
+}
+.section-highlight__menu-item-imgbox--mobile {
+  display: none;
+}
+.section-highlight__menu-item-imgbox img {
+  width: 12.8rem;
+  position: relative;
+  z-index: 2;
+}
+.section-highlight__menu-item-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  margin-bottom: 0.4rem;
+}
+.section-highlight__menu-item-desc {
+  width: 100%;
+  max-width: 35rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+.line-thing {
+  position: absolute;
+  top: 1.8rem;
+  right: 0;
+  width: 100%;
+  max-width: 3.2rem;
+  height: 1px;
+  background: #9e7f66;
+  z-index: 1;
+}
+
+@media all and (max-width: 1000px) {
+  .section-highlight {
+    padding-top: 9.6rem;
+    padding-bottom: 9.6rem;
+  }
+  .section-highlight__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5.6rem;
+  }
+
+  .section-highlight__textbox {
+    text-align: center;
+  }
+  .patternbox--1 {
+    justify-content: center;
+  }
+}
+@media all and (max-width: 485px) {
+  .section-highlight {
+    padding-top: 7.2rem;
+    padding-bottom: 7.2rem;
+  }
+  .section-highlight__menu-item {
+    flex-direction: column;
+  }
+  .section-highlight__menu-item-textbox {
+    text-align: center;
+  }
+  .section-highlight__menu-item-imgbox {
+    width: 100%;
+    max-width: 100%;
+  }
+  .section-highlight__menu-item-imgbox--desktop {
+    display: none;
+  }
+  .section-highlight__menu-item-imgbox--mobile {
+    display: flex;
+  }
+  .section-highlight__menu-item-imgbox img {
+    /* width: 32.7rem; */
+    width: 100%;
+  }
+  .line-thing {
+    display: none;
+  }
+}
