@@ -445,3 +445,130 @@ body {
     display: none;
   }
 }
+.section-gathering {
+  border: 1px solid red;
+  padding: 16rem 2.4rem;
+}
+.section-gathering__container {
+  border: 1px solid black;
+  max-width: 111rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12.5rem;
+}
+.section-gathering__imgbox {
+  max-width: 54rem;
+}
+.section-gathering__textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 7.8rem;
+}
+.section-gathering__box1 {
+}
+.section-gathering__imgbox--tablet {
+  display: none;
+}
+.section-gathering__textbox-title {
+  color: #242b37;
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.6rem;
+  letter-spacing: -0.5px;
+}
+.section-gathering__textbox-description {
+  margin-bottom: 3.2rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: -0.225px;
+  max-width: 44.5rem;
+}
+.section-gathering__textbox-cta {
+  background: black;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 2px;
+  color: white;
+  padding: 2.4rem 5.6rem 2.4rem 5.4rem;
+  border: 2px solid transparent;
+}
+.section-gathering__textbox-cta:hover,
+.section-gathering__textbox-cta:focus {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  transform: translateY(-5px) scale(1.1);
+}
+.section-gathering__tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.section-gathering__tab-btn {
+  text-transform: uppercase;
+  color: #4c4c4c;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 2px;
+}
+@media all and (max-width: 960px) {
+  .section-gathering {
+    padding: 12rem 2.4rem;
+  }
+  .section-gathering__container {
+    flex-direction: column;
+    gap: 5.6rem;
+  }
+  .section-gathering__imgbox {
+    max-width: 57.3rem;
+  }
+  .section-gathering__imgbox--desktop {
+    display: none;
+  }
+  .section-gathering__imgbox--tablet {
+    display: flex;
+  }
+  .section-gathering__textbox {
+    width: 100%;
+    max-width: 68.9rem;
+    text-align: center;
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+  .section-gathering__textbox-description {
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+  }
+  .section-gathering__tabs {
+    width: 100%;
+    max-width: 68.9rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .section-gathering__tab {
+    width: 100%;
+    max-width: 22.3rem;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 741px) {
+  .section-gathering__tabs {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 422px) {
+  .section-gathering__container {
+    gap: 2.4rem;
+  }
+}
