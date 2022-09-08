@@ -75,14 +75,18 @@
       <section class="section-local">
         <div class="section-local__container"></div>
       </section>
-      <section class="section-highlight">
+      <section
+        class="section-highlight"
+        aria-labelledby="highlight"
+        role="contentinfo"
+      >
         <div class="section-highlight__container">
           <div class="section-highlight__textbox">
             <div class="pattern-box patternbox--1">
               <div class="pattern-box__circle"></div>
               <div class="pattern-box__line"></div>
             </div>
-            <h2 class="section-highlight__textbox-title">
+            <h2 class="section-highlight__textbox-title" id="highlight">
               A few highlights <br />
               from our menu
             </h2>
@@ -189,7 +193,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-gathering">
+      <section class="section-gathering" aria-labelledby="booking">
         <div class="section-gathering__container">
           <div
             class="section-gathering__imgbox section-gathering__imgbox--desktop"
@@ -220,7 +224,9 @@
           </div>
           <div class="section-gathering__textbox">
             <div class="section-gathering__box1">
-              <h2 class="section-gathering__textbox-title">Family Gathering</h2>
+              <h2 class="section-gathering__textbox-title" id="booking">
+                Family Gathering
+              </h2>
               <p class="section-gathering__textbox-description">
                 We love catering for entire families. So please bring everyone
                 along for a special meal with your loved ones. We’ll provide a
@@ -253,7 +259,33 @@
       </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__row1">
+        <div class="footer__row1-container">
+          <h2 class="footer__title">Ready to make a reservation?</h2>
+          <a href="#" class="footer__cta"> Book a table </a>
+        </div>
+      </div>
+      <div class="footer__row2">
+        <div class="footer__row2-container">
+          <img
+            src="./images/logo.svg"
+            alt="company logo dine"
+            class="footer__logo"
+          />
+          <address>
+            <p class="footer__country">Marthwaite, Sedbergh</p>
+            <p class="footer__city">Cumbria</p>
+            <p class="footer__phone-number">+00 44 123 4567</p>
+          </address>
+          <div class="footer__schedulebox">
+            <p class="footer__open">Open Times</p>
+            <p class="footer__weekday">Mon - Fri: 09:00 AM - 10:00 PM</p>
+            <p class="footer__weekend">Sat - Sun: 09:00 AM - 11:30 PM</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     The most locally sourced food All our ingredients come directly from our
     farm or local fishery. So you can be sure that you’re eating the freshest,
@@ -262,8 +294,6 @@
     sure to mark your special date with an unforgettable meal. Social Events Are
     you looking to have a larger social event? No problem! We’re more than happy
     to cater for big parties. We’ll work with you to make your event a hit with
-    everyone. Book a table Ready to make a reservation? Book a table Marthwaite,
-    Sedbergh Cumbria +00 44 123 4567 Open Times Mon - Fri: 09:00 AM - 10:00 PM
-    Sat - Sun: 09:00 AM - 11:30 PM
+    everyone. Book a table
   </body>
 </html>
